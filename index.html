@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="bg-white">
+        <header class="absolute inset-x-0 top-0 z-50 w-full">
+            <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+                <div class="flex flex-1">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Your Company</span>
+                        <img class="h-16 w-auto" src="images/pray.jpg" alt="Logo">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation (Centered) -->
+                <div class="hidden lg:flex flex-1 justify-center space-x-8">
+                    <a href="index.html" class="text-sm font-semibold text-gray-900 hover:text-[#f97316]">Home</a>
+                    <a href="ssebatta.html" class="text-sm font-semibold text-gray-900 hover:text-[#f97316]">Ssebatta</a>
+                    <a href="gafabusa.html" class="text-sm font-semibold text-gray-900 hover:text-[#f97316]">Gafabusa</a>
+                    <a href="butteraba.html" class="text-sm font-semibold text-gray-900 hover:text-[#f97316]">Butteraba</a>
+                    <a href="nabukenya.html" class="text-sm font-semibold text-gray-900 hover:text-[#f97316]">Nabukenya</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="menu-toggle" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu (Hidden by Default) -->
+            <div id="mobile-menu" class="hidden absolute top-16 inset-x-0 bg-white shadow-lg rounded-md p-4 lg:hidden">
+                <a href="index.html" class="block py-2 text-center text-gray-900 font-semibold hover:text-[#f97316]">Home</a>
+                <a href="ssebatta.html" class="block py-2 text-center text-gray-900 font-semibold hover:text-[#f97316]">Ssebatta</a>
+                <a href="gafabusa.html" class="block py-2 text-center text-gray-900 font-semibold hover:text-[#f97316]">Gafabusa</a>
+                <a href="butteraba.html" class="block py-2 text-center text-gray-900 font-semibold hover:text-[#f97316]">Butteraba</a>
+                <a href="nabukenya.html" class="block py-2 text-center text-gray-900 font-semibold hover:text-[#f97316]">Nabukenya</a>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="relative isolate px-6 pt-24 lg:px-8">
+            <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+                <div class="text-center">
+                    <h1 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
+                      Fall Armyworm Diagnosis
+                    </h1>
+                    <p class="mt-6 text-lg text-gray-600 sm:text-xl">
+                      The Fall Armyworm Diagnosis Project aims to develop a specialized, machine learning-based system
+                      for the early detection, diagnosis, and management of Fall Armyworm (FAW) infestations in maize
+                      crops.
+                    </p>
+                    <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="#" class="rounded-md bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-md hover:bg-indigo-500">
+                            Get started
+                        </a>
+                        <a href="#" class="text-sm font-semibold text-gray-900">
+                            Learn more <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
