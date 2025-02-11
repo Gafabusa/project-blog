@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fall Armyworm Diagnosis</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
 
@@ -13,17 +19,17 @@
         <nav class="container mx-auto flex items-center justify-between py-4 px-6">
             <!-- Logo -->
             <a href="#" class="flex items-center space-x-3">
-                <img class="h-16 w-auto rounded-full" src="images/pray.jpg" alt="Logo">
+                <img class="h-16 w-auto rounded-full" src="images/Muk logo.png" alt="Logo">
                 <span class="text-2xl font-bold text-gray-900">FAW Diagnosis</span>
             </a>
 
             <!-- Desktop Navigation -->
             <div class="hidden lg:flex space-x-6">
-                <a href="index.html" class="text-gray-900 font-semibold hover:text-orange-500 transition">Home</a>
-                <a href="ssebatta.html" class="text-gray-900 font-semibold hover:text-orange-500 transition">Ssebatta Adam</a>
-                <a href="gafabusa.html" class="text-gray-900 font-semibold hover:text-orange-500 transition">Gafabusa Willy</a>
-                <a href="butteraba.html" class="text-gray-900 font-semibold hover:text-orange-500 transition">Butteraba Lynatte</a>
-                <a href="nabukenya.html" class="text-gray-900 font-semibold hover:text-orange-500 transition">Nabukenya Mariam</a>
+                <a href="index.html" class="text-green-600 font-semibold hover:text-orange-500 transition">Home</a>
+                <a href="ssebatta.html" class="text-green-600 font-semibold hover:text-orange-500 transition">Ssebatta Adam</a>
+                <a href="gafabusa.html" class="text-green-600 font-semibold hover:text-orange-500 transition">Gafabusa Willy</a>
+                <a href="butteraba.html" class="text-green-600 font-semibold hover:text-orange-500 transition">Butteraba Lynatte</a>
+                <a href="nabukenya.html" class="text-green-600 font-semibold hover:text-orange-500 transition">Nabukenya Mariam</a>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -36,112 +42,178 @@
 
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden bg-white shadow-lg rounded-md p-4 lg:hidden absolute w-full top-16">
-            <a href="index.html" class="block py-2 text-center text-gray-900 font-semibold hover:text-orange-500">Home</a>
-            <a href="ssebatta.html" class="block py-2 text-center text-gray-900 font-semibold hover:text-orange-500">Ssebatta</a>
-            <a href="gafabusa.html" class="block py-2 text-center text-gray-900 font-semibold hover:text-orange-500">Gafabusa</a>
-            <a href="butteraba.html" class="block py-2 text-center text-gray-900 font-semibold hover:text-orange-500">Butteraba</a>
-            <a href="nabukenya.html" class="block py-2 text-center text-gray-900 font-semibold hover:text-orange-500">Nabukenya</a>
+            <a href="index.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Home</a>
+            <a href="ssebatta.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Ssebatta</a>
+            <a href="gafabusa.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Gafabusa</a>
+            <a href="butteraba.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Butteraba</a>
+            <a href="nabukenya.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Nabukenya</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-cover bg-center min-h-screen flex items-center justify-center text-center px-6"
-        style="background-image: url('images/farm.jpg');">
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="relative z-10 max-w-3xl text-white">
-            <h1 class="text-5xl font-extrabold sm:text-6xl leading-tight">
-                Fall Armyworm Diagnosis
-            </h1>
-            <p class="mt-6 text-lg sm:text-xl">
-                A machine learning-based system for early detection and diagnosis of Fall Armyworm (FAW) infestations in maize crops.
+    <section class="relative min-h-screen flex items-center justify-center text-center px-6 sm:px-12"
+    style="background-image: url('images/faw.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-3xl text-white">
+        <h1 class="text-5xl font-extrabold sm:text-6xl leading-tight">
+            Fall Armyworm Diagnosis
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl">
+            A machine learning-based system for early detection and diagnosis of Fall Armyworm (FAW) infestations in maize crops.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="#" class="rounded-md bg-orange-500 px-6 py-3 text-lg font-semibold text-white shadow-md hover:bg-orange-400 transition">
+                Get Started
+            </a>
+            <a href="#" class="text-lg font-semibold text-white hover:underline">
+                Learn More →
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Introduction -->
+    <div class="container mx-auto px-6 py-16">
+        <div class="bg-white shadow-lg rounded-lg p-8 max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6 text-center">Introduction</h2>
+            <p class="text-gray-700 text-lg leading-relaxed">
+                The Fall Armyworm (FAW) (<i>Spodoptera frugiperda</i>) is a highly destructive pest that primarily attacks maize and cereal crops worldwide. 
+                Originally from the Americas, FAW has rapidly spread to Africa, including Uganda, due to favorable climatic conditions and global trade. 
+                It causes severe crop losses, reduced yields, and financial instability, especially for small-scale farmers with limited pest control resources.  
+                <b>Early detection is crucial</b>, but most farmers rely on ineffective visual inspections, leading to delayed responses.  
+                Current methods like chemical pesticides are costly and pose environmental and health risks when misused. 
+                This study aims to collect data on FAW prevalence, its impact, and existing management strategies among smallholder farmers.  
+                Ultimately, the research supports <b>food security and sustainable agriculture</b> in Uganda.
             </p>
-            <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#" class="rounded-md bg-orange-500 px-6 py-3 text-lg font-semibold text-white shadow-md hover:bg-orange-400 transition">
-                    Get Started
-                </a>
-                <a href="#" class="text-lg font-semibold text-white hover:underline">
-                    Learn More →
-                </a>
+            <div class="mt-8 flex justify-center">
+                <img src="images/faw.jpeg" alt="Fall Armyworm on maize" class="rounded-lg shadow-md w-full max-w-3xl">
+            </div>
+            <p class="text-center text-gray-600 mt-3 text-sm italic">Fig 1: Maize leaf with Fall Armyworm</p>   
+        </div>
+    </div>
+
+    <!-- Problem Statement -->
+    <div class="container mx-auto px-6 py-16">
+        <div class="bg-white shadow-lg rounded-lg p-8 max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6 text-center">Problem Statement</h2>
+            <p class="text-gray-700 text-lg leading-relaxed">
+                <b>Fall Armyworm (Spodoptera frugiperda)</b> is a severe pest affecting maize farmers in Uganda. Farmers struggle to identify infestations 
+                early due to a lack of affordable tools and resources. Instead, they rely on traditional practices and personal observations, which are 
+                often inaccurate and delay intervention. These delays allow the pest to cause extensive damage, <b>reducing yields</b> and increasing 
+                the economic burden on smallholder farmers.  
+                <br><br>
+                Access to reliable pest management strategies, including diagnostic tools and expert guidance, is limited in rural areas, 
+                further worsening the problem. While technological solutions such as <b>mobile apps</b> could bridge this gap, 
+                farmers' perceptions of and readiness for adopting these tools remain unclear.  
+                <br><br>
+                This study aims to address these challenges by collecting data to understand farmers' experiences, practices, and openness 
+                to **technology-driven solutions.
+            </p>
+        </div>
+    </div>
+
+    <!-- Project Objective -->
+    <div class="container mx-auto px-6 py-16">
+        <div class="bg-white shadow-lg rounded-lg p-8 max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6 text-center">Project Objective</h2>
+            <p class="text-gray-700 text-lg leading-relaxed">
+                The objective of this study is to assess the awareness and challenges faced by maize farmers in identifying and managing Fall Armyworm (FAW) infestations.  
+                Additionally, the study explores farmers' perceptions of using technology as a solution, including their experiences, knowledge of FAW's impact, 
+                and readiness to adopt digital tools for early detection and management.
+            </p>
+        </div>
+    </div>
+
+<!-- Meet the Team Section -->
+<section class="container mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Meet the Team</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <!-- Team Member 1 -->
+        <div>
+            <div class="h-96 w-full overflow-hidden rounded-lg shadow-lg">
+                <img src="images/adam.jpeg" alt="Ssebatta Adam" class="w-full h-full object-cover">
+            </div>
+            <div class="mt-4 text-center">
+                <h3 class="text-2xl font-semibold text-gray-900">Ssebatta Adam</h3>
+                <p class="text-gray-600">Project Lead</p>
             </div>
         </div>
-    </section>
 
-   <!-- Introduction -->
-<div class="container mx-auto px-6 py-16">
-    <div class="bg-white shadow-lg rounded-lg p-8 max-w-4xl mx-auto">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6 text-center">Introduction</h2>
-        <p class="text-gray-700 text-lg leading-relaxed">
-            The Fall Armyworm (FAW) (<i>Spodoptera frugiperda</i>) is a highly destructive pest that primarily attacks maize and cereal crops worldwide. 
-            Originally from the Americas, FAW has rapidly spread to Africa, including Uganda, due to favorable climatic conditions and global trade. 
-            It causes severe crop losses, reduced yields, and financial instability, especially for small-scale farmers with limited pest control resources.  
-            <b>Early detection is crucial</b>, but most farmers rely on ineffective visual inspections, leading to delayed responses.  
-            Current methods like chemical pesticides are costly and pose environmental and health risks when misused. 
-            This study aims to collect data on FAW prevalence, its impact, and existing management strategies among smallholder farmers.  
-            Ultimately, the research supports <b>food security and sustainable agriculture</b> in Uganda.
-        </p>
-        <div class="mt-8 flex justify-center">
-            <img src="images/faw.jpg" alt="Fall Armyworm on maize" class="rounded-lg shadow-md w-full max-w-3xl">
+        <!-- Team Member 2 -->
+        <div>
+            <div class="h-96 w-full overflow-hidden rounded-lg shadow-lg">
+                <img src="images/willy.jpeg" alt="Gafabusa Willy" class="w-full h-full object-cover">
+            </div>
+            <div class="mt-4 text-center">
+                <h3 class="text-2xl font-semibold text-gray-900">Gafabusa Willy</h3>
+                <p class="text-gray-600">Data Specialist</p>
+            </div>
         </div>
-        <p class="text-center text-gray-600 mt-3 text-sm italic">Fig 1: Maize plant with Fall Armyworm</p>   
-    </div>
-</div>
 
-<!-- Problem Statement -->
-<div class="container mx-auto px-6 py-16">
-    <div class="bg-white shadow-lg rounded-lg p-8 max-w-4xl mx-auto">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6 text-center">Problem Statement</h2>
-        <p class="text-gray-700 text-lg leading-relaxed">
-            <b>Fall Armyworm (Spodoptera frugiperda)</b> is a severe pest affecting maize farmers in Uganda. Farmers struggle to identify infestations 
-            early due to a lack of affordable tools and resources. Instead, they rely on traditional practices and personal observations, which are 
-            often inaccurate and delay intervention. These delays allow the pest to cause extensive damage, <b>reducing yields</b> and increasing 
-            the economic burden on smallholder farmers.  
-            <br><br>
-            Access to reliable pest management strategies, including **diagnostic tools and expert guidance**, is limited in rural areas, 
-            further worsening the problem. While technological solutions such as <b>mobile apps</b> could bridge this gap, 
-            farmers' perceptions of and readiness for adopting these tools remain unclear.  
-            <br><br>
-            This study aims to address these challenges by collecting data to understand farmers' experiences, practices, and openness 
-            to **technology-driven solutions**.
-        </p>
-    </div>
-</div>
+        <!-- Team Member 3 -->
+        <div>
+            <div class="h-96 w-full overflow-hidden rounded-lg shadow-lg">
+                <img src="images/lynatte.jpeg" alt="Butteraba Lynatte" class="w-full h-full object-cover">
+            </div>
+            <div class="mt-4 text-center">
+                <h3 class="text-2xl font-semibold text-gray-900">Butteraba Lynatte</h3>
+                <p class="text-gray-600">UI/UX Designer</p>
+            </div>
+        </div>
 
-<!-- Project Objective -->
-<div class="container mx-auto px-6 py-16">
-    <div class="bg-white shadow-lg rounded-lg p-8 max-w-4xl mx-auto">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6 text-center">Project Objective</h2>
-        <p class="text-gray-700 text-lg leading-relaxed">
-            The objective of this study is to assess the awareness and challenges faced by maize farmers in identifying and managing Fall Armyworm (FAW) infestations.  
-            Additionally, the study explores farmers' perceptions of using technology as a solution, including their experiences, knowledge of FAW's impact, 
-            and readiness to adopt digital tools for early detection and management.
-        </p>
+        <!-- Team Member 4 -->
+        <div>
+            <div class="h-96 w-full overflow-hidden rounded-lg shadow-lg">
+                <img src="images/nabukenya.jpg" alt="Nabukenya Mariam" class="w-full h-full object-cover">
+            </div>
+            <div class="mt-4 text-center">
+                <h3 class="text-2xl font-semibold text-gray-900">Nabukenya Mariam</h3>
+                <p class="text-gray-600">Developer</p>
+            </div>
+        </div>
     </div>
-</div>
+</section>
 
     <!-- PDF Documents Section -->
     <section class="container mx-auto px-6 py-16">
         <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Project Documents</h2>
         <div class="grid md:grid-cols-3 gap-12">
             <!-- PDF 1 -->
-            <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <h3 class="text-xl font-semibold text-gray-900 mb-2">Data Collection questionnaire</h3>
                 <embed src="documents/questions.pdf" type="application/pdf" class="w-full h-56 rounded-md">
                 <a href="documents/questions.pdf" target="_blank" class="block mt-3 text-orange-500 font-semibold hover:underline">View Full PDF</a>
             </div>
             <!-- PDF 2 -->
-            <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <h3 class="text-xl font-semibold text-gray-900 mb-2">SRS</h3>
                 <embed src="documents/SRS.pdf" type="application/pdf" class="w-full h-56 rounded-md">
                 <a href="documents/SRS.pdf" target="_blank" class="block mt-3 text-orange-500 font-semibold hover:underline">View Full PDF</a>
             </div>
             <!-- PDF 3 -->
-            <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <h3 class="text-xl font-semibold text-gray-900 mb-2">Final Report</h3>
                 <embed src="documents/report.pdf" type="application/pdf" class="w-full h-56 rounded-md">
                 <a href="documents/report.pdf" target="_blank" class="block mt-3 text-orange-500 font-semibold hover:underline">View Full PDF</a>
             </div>
         </div>
     </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm">&copy; <span id="current-year"></span> Fall Armyworm Diagnosis. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Automatically update the year in the footer
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
 
     <script>
         document.getElementById("menu-toggle").addEventListener("click", function () {
