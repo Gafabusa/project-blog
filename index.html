@@ -24,13 +24,13 @@
             </a>
 
             <!-- Desktop Navigation -->
-            <div class="hidden lg:flex space-x-6">
-                <a href="index.html" class="text-green-600 font-semibold hover:text-orange-500 transition">Home</a>
-                <a href="ssebatta.html" class="text-green-600 font-semibold hover:text-orange-500 transition">Ssebatta Adam</a>
-                <a href="gafabusa.html" class="text-green-600 font-semibold hover:text-orange-500 transition">Gafabusa Willy</a>
-                <a href="butteraba.html" class="text-green-600 font-semibold hover:text-orange-500 transition">Butteraba Lynatte</a>
-                <a href="nabukenya.html" class="text-green-600 font-semibold hover:text-orange-500 transition">Nabukenya Mariam</a>
-            </div>
+<div class="hidden lg:flex space-x-6">
+    <a href="index.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Home</a>
+    <a href="ssebatta.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Ssebatta Adam</a>
+    <a href="gafabusa.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Gafabusa Willy</a>
+    <a href="butteraba.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Butteraba Lynatte</a>
+    <a href="nabukenya.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Nabukenya Mariam</a>
+</div>
 
             <!-- Mobile Menu Button -->
             <button id="menu-toggle" class="lg:hidden text-gray-700">
@@ -65,14 +65,7 @@
         <p class="mt-6 text-lg sm:text-xl">
             A machine learning-based system for early detection and diagnosis of Fall Armyworm (FAW) infestations in maize crops.
         </p>
-        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#" class="rounded-md bg-orange-500 px-6 py-3 text-lg font-semibold text-white shadow-md hover:bg-orange-400 transition">
-                Get Started
-            </a>
-            <a href="#" class="text-lg font-semibold text-white hover:underline">
-                Learn More →
-            </a>
-        </div>
+        
     </div>
 </section>
 
@@ -169,7 +162,7 @@
         <!-- Team Member 4 -->
         <div>
             <div class="h-96 w-full overflow-hidden rounded-lg shadow-lg">
-                <img src="images/nabukenya.jpg" alt="Nabukenya Mariam" class="w-full h-full object-cover">
+                <img src="images/mariam.jpeg" alt="Nabukenya Mariam" class="w-full h-full object-cover">
             </div>
             <div class="mt-4 text-center">
                 <h3 class="text-2xl font-semibold text-gray-900">Nabukenya Mariam</h3>
@@ -220,6 +213,20 @@
             document.getElementById("mobile-menu").classList.toggle("hidden");
         });
     </script>
+
+   <!-- making the current page active -->
+<script>
+    const currentPage = window.location.pathname.split("/").pop();
+
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("text-orange-600", "font-bold");
+            link.classList.remove("text-green-600");
+        }
+    });
+</script>
 
 </body>
 </html>

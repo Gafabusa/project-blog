@@ -30,11 +30,11 @@
 
             <!-- Desktop Navigation -->
             <div class="hidden lg:flex space-x-6">
-                <a href="index.html" class="text-gray-900 font-semibold hover:text-orange-500 transition">Home</a>
-                <a href="ssebatta.html" class="text-gray-900 font-semibold hover:text-orange-500 transition">Ssebatta Adam</a>
-                <a href="gafabusa.html" class="text-gray-900 font-semibold hover:text-orange-500 transition">Gafabusa Willy</a>
-                <a href="butteraba.html" class="text-gray-900 font-semibold hover:text-orange-500 transition">Butteraba Lynatte</a>
-                <a href="nabukenya.html" class="text-gray-900 font-semibold hover:text-orange-500 transition">Nabukenya Mariam</a>
+                <a href="index.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Home</a>
+                <a href="ssebatta.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Ssebatta Adam</a>
+                <a href="gafabusa.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Gafabusa Willy</a>
+                <a href="butteraba.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Butteraba Lynatte</a>
+                <a href="nabukenya.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Nabukenya Mariam</a>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -47,11 +47,11 @@
 
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden bg-white shadow-lg rounded-md p-4 lg:hidden absolute w-full top-16">
-            <a href="index.html" class="block py-2 text-center text-gray-900 font-semibold hover:text-orange-500">Home</a>
-            <a href="ssebatta.html" class="block py-2 text-center text-gray-900 font-semibold hover:text-orange-500">Ssebatta</a>
-            <a href="gafabusa.html" class="block py-2 text-center text-gray-900 font-semibold hover:text-orange-500">Gafabusa</a>
-            <a href="butteraba.html" class="block py-2 text-center text-gray-900 font-semibold hover:text-orange-500">Butteraba</a>
-            <a href="nabukenya.html" class="block py-2 text-center text-gray-900 font-semibold hover:text-orange-500">Nabukenya</a>
+            <a href="index.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Home</a>
+            <a href="ssebatta.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Ssebatta</a>
+            <a href="gafabusa.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Gafabusa</a>
+            <a href="butteraba.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Butteraba</a>
+            <a href="nabukenya.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Nabukenya</a>
         </div>
     </header>
 
@@ -172,6 +172,20 @@
             document.getElementById("mobile-menu").classList.toggle("hidden");
         });
     </script>
+
+    <!-- making the current page active -->
+<script>
+    const currentPage = window.location.pathname.split("/").pop();
+
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("text-orange-600", "font-bold");
+            link.classList.remove("text-green-600");
+        }
+    });
+</script>
 
 </body>
 </html>
