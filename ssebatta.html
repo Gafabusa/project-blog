@@ -3,176 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Contributions - Fall Armyworm Diagnosis</title>
+    <title>Ssebatta Adam - Fall Armyworm Diagnosis</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
-        .hero-section {
-            background-image: url('images/farm.jpg'); /* Add your background image here */
-            background-size: cover;
-            background-position: center;
-        }
     </style>
 </head>
 <body class="bg-gray-50">
-
     <!-- Navigation -->
     <header class="bg-white shadow-md fixed w-full z-50">
         <nav class="container mx-auto flex items-center justify-between py-4 px-6">
             <!-- Logo -->
-            <a href="#" class="flex items-center space-x-3">
-                <img class="h-16 w-auto rounded-full" src="images/Muk logo.png" alt="Logo">
-                <span class="text-2xl font-bold text-gray-900">FAW Diagnosis</span>
+            <a href="index.html" class="flex items-center space-x-3">
+                <img class="h-10 w-auto" src="images/Muk logo.png" alt="Logo">
+                <span class="text-xl font-bold text-purple-600">FAW Diagnosis</span>
             </a>
-
+            
             <!-- Desktop Navigation -->
-            <div class="hidden lg:flex space-x-6">
-                <a href="index.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Home</a>
-                <a href="ssebatta.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Ssebatta Adam</a>
-                <a href="gafabusa.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Gafabusa Willy</a>
-                <a href="butteraba.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Butteraba Lynatte</a>
-                <a href="nabukenya.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Nabukenya Mariam</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-purple-600 transition duration-300">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-purple-600 transition duration-300">About</a>
             </div>
-
+            
             <!-- Mobile Menu Button -->
-            <button id="menu-toggle" class="lg:hidden text-gray-700">
+            <button id="menu-toggle" class="md:hidden text-gray-700">
                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"/>
                 </svg>
             </button>
         </nav>
-
+        
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden bg-white shadow-lg rounded-md p-4 lg:hidden absolute w-full top-16">
-            <a href="index.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Home</a>
-            <a href="ssebatta.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Ssebatta</a>
-            <a href="gafabusa.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Gafabusa</a>
-            <a href="butteraba.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Butteraba</a>
-            <a href="nabukenya.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Nabukenya</a>
+        <div id="mobile-menu" class="hidden bg-white shadow-lg rounded-md p-4 md:hidden absolute w-full">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-purple-600">Home</a>
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-purple-600">About</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section relative min-h-screen flex items-center justify-center text-center px-6"
-    style="background-image: url('images/1.jpeg'); background-size: cover; background-position: center;">
-<div class="absolute inset-0 bg-black bg-opacity-50"></div>
-<div class="relative z-10 max-w-3xl text-white">
-   <h1 class="text-5xl font-extrabold sm:text-6xl leading-tight">
-       My Contributions
-   </h1>
-   <p class="mt-6 text-lg sm:text-xl">
-Learn more about my role in the Fall Armyworm Diagnosis project and how I contributed to its development.
-   </p>
-   <div class="mt-8">
-       <a href="#about" class="rounded-md bg-orange-500 px-6 py-3 text-lg font-semibold text-white shadow-md hover:bg-orange-400 transition">
-           Go to About Me
-       </a>
-   </div>
-</div>
+    <section class="relative pt-24 md:pt-32 flex items-center justify-center text-center px-6 sm:px-12 min-h-[60vh]"
+        style="background-image: url('images/1.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        
+        <!-- Content -->
+        <div class="relative z-10 max-w-3xl text-white py-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+                Ssebatta Adam
+            </h1>
+            <p class="mt-6 text-lg md:text-xl max-w-2xl mx-auto">
+                Learn more about my role in the Fall Armyworm Diagnosis project and how I contributed to its development.
+            </p>
+            <div class="mt-8">
+                <a href="#about" class="rounded-md bg-purple-600 px-6 py-3 text-lg font-semibold text-white shadow-md hover:bg-purple-700 transition duration-300">
+                    About Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block px-3 py-1 text-sm font-semibold text-purple-600 bg-purple-100 rounded-full mb-4">Team Member</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+            
+            <div class="bg-white shadow-md rounded-lg p-8 max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <!-- Photo -->
+                    <div class="w-48 h-48 overflow-hidden rounded-xl shadow-lg">
+                        <img src="images/adam.jpeg" alt="Ssebatta Adam" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <!-- About Me Text -->
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Ssebatta Adam</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            My name is <span class="font-semibold">Ssebatta Adam</span>, I am passionate about Flutter, Firebase, Python, JavaScript, and Machine Learning, with a strong focus on building efficient and user-friendly applications. I enjoy developing scalable mobile and web solutions that enhance user experience and simplify complex processes. With expertise in Flutter and Firebase, I create cross-platform applications that integrate real-time data and cloud-based solutions. My Python and JavaScript skills allow me to build powerful backend systems and interactive web applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contributions Section -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <span class="inline-block px-3 py-1 text-sm font-semibold text-green-600 bg-green-100 rounded-full mb-4 animate-pulse">Project Work</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">My Contributions</h2>
+            <div class="w-20 h-1 bg-green-600 mx-auto transition-all duration-500 hover:w-24"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+            <!-- Contribution 1 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-purple-100 flex items-center justify-center mr-4">
+                            <span class="text-purple-600 font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Project Ideation</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        From the very beginning, I actively participated in shaping the idea of this project, driven by my passion for technology and innovation in agriculture. I strongly advocated for the development of a mobile application integrated with machine learning, believing that such a solution would provide farmers with an efficient and accessible tool for early detection and diagnosis of Fall Armyworm (FAW) infestations.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Contribution 2 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <span class="text-blue-600 font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Field Data Collection</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        As part of the research team, I actively participated in the data collection process, ensuring that we gathered accurate and relevant information for the project. I visited NARO (National Agricultural Research Organization) and engaged with experts to understand the extent of Fall Armyworm (FAW) infestations and the current strategies being used to combat them.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Contribution 3 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-green-100 flex items-center justify-center mr-4">
+                            <span class="text-green-600 font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Weather API Integration</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        I will also be responsible for integrating a weather API to provide real-time weather updates for farmers. Weather plays a crucial role in pest outbreaks and crop health, so giving farmers access to timely weather information will help them make informed decisions about pest management and farming activities. I will also work on developing an advisory system that provides farmers with essential information about different pests and diseases.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Contribution 4 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-yellow-100 flex items-center justify-center mr-4">
+                            <span class="text-yellow-600 font-bold">4</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Community Section</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        I will be actively involved in developing the community section of the mobile application, working alongside other team members to ensure it serves as an interactive and valuable space for farmers. This section will provide a platform for farmers to share their experiences, ask questions, and receive guidance on managing Fall Armyworm (FAW) infestations effectively.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Contribution 5 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-red-100 flex items-center justify-center mr-4">
+                            <span class="text-red-600 font-bold">5</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Model Training</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        I will be actively involved in training the machine learning model used in the mobile application to detect Fall Armyworm (FAW) infestations. Leveraging my expertise in Python and machine learning, I will work on developing and fine-tuning the model to accurately identify FAW symptoms in crop images. By training the model on a diverse dataset of FAW images and healthy crops, I aim to create a robust and reliable detection system.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Contribution 6 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                            <span class="text-indigo-600 font-bold">6</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Treatment Section</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        I will be working on the treatment section of the mobile app, which will be displayed to farmers after diagnosing a Fall Armyworm (FAW) infestation. This section will provide users with tailored, easy-to-understand recommendations on how to effectively treat and manage the pest, based on the diagnosis results. Working alongside the team, I'll ensure that the treatment options provided are not only scientifically accurate but also practical and accessible for farmers.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Contribution 7 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 md:col-span-2">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-pink-100 flex items-center justify-center mr-4">
+                            <span class="text-pink-600 font-bold">7</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Software Design Documentation</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        I will be responsible for writing the introduction, system overview, and component design sections of the software design document. In the introduction, I will provide an overview of the project, its objectives, and the target audience. I will highlight the importance of developing a mobile application for Fall Armyworm (FAW) diagnosis and emphasize the need for accurate and accessible pest detection tools for farmers. The system overview section will outline the key features and functionalities of the application.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- About Me Section -->
-<div id="about" class="bg-gradient-to-r from-orange-100 to-gray-50 py-16">
-<div class="container mx-auto px-6">
-<div class="bg-white shadow-lg rounded-lg p-8 max-w-4xl mx-auto">
-<div class="flex flex-col md:flex-row items-center gap-8">
-<!-- Photo -->
-<div class="w-48 h-48 overflow-hidden shadow-lg">
-<img src="images/adam.jpeg" alt="Ssebatta Adam" class="w-full h-full object-cover">
-</div>
-
-<!-- About Me Text -->
-<div class="flex-1 ">
-<h2 class="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
-<p class="text-gray-700 text-lg leading-relaxed">
-My name is <span class="font-semibold">Ssebatta Adam</span>, I am passionate about Flutter, Firebase, Python, JavaScript, and Machine Learning, with a strong focus on building efficient and user-friendly applications. I enjoy developing scalable mobile and web solutions that enhance user experience and simplify complex processes. With expertise in Flutter and Firebase, I create cross-platform applications that integrate real-time data and cloud-based solutions. My Python and JavaScript skills allow me to build powerful backend systems and interactive web applications.
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- Contributions Section -->
-<div class="bg-gradient-to-r from-orange-100 to-gray-50 py-16">
-<div class="container mx-auto px-6">
-<h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">My Contributions</h2>
-<div class="space-y-8 max-w-4xl mx-auto">
-<!-- Contribution 1 -->
-<div class="bg-white shadow-lg rounded-lg p-8 flex flex-col md:flex-row items-center gap-8 hover:shadow-xl transition-shadow">
-<div class="flex-1">
-<h3 class="text-2xl font-semibold text-gray-900 mb-4">Project Ideation</h3>
-<p class="text-gray-700 text-lg leading-relaxed">
-From the very beginning, I actively participated in shaping the idea of this project, driven by my passion for technology and innovation in agriculture. I strongly advocated for the development of a mobile application integrated with machine learning, believing that such a solution would provide farmers with an efficient and accessible tool for early detection and diagnosis of Fall Armyworm (FAW) infestations. Recognizing the challenges faced by farmers in identifying and managing FAW, I pushed for a technology-driven approach that could leverage data and AI to offer accurate pest detection. My goal was to ensure that the project not only focused on research but also led to the creation of a practical and impactful solution that farmers could easily use in the field.
-</p>
-</div>
-</div>
-
-<!-- Contribution 2 -->
-<div class="bg-white shadow-lg rounded-lg p-8 flex flex-col md:flex-row items-center gap-8 hover:shadow-xl transition-shadow">
-<div class="flex-1">
-<h3 class="text-2xl font-semibold text-gray-900 mb-4">Field Data Collection</h3>
-<p class="text-gray-700 text-lg leading-relaxed">
-As part of the research team, I actively participated in the data collection process, ensuring that we gathered accurate and relevant information for the project. I visited NARO (National Agricultural Research Organization) and engaged with experts to understand the extent of Fall Armyworm (FAW) infestations and the current strategies being used to combat them. Additionally, I went into the field, visiting different farmers to document their experiences, challenges, and pest management practices. By conducting interviews and surveys, I helped collect valuable insights that would later shape the development of our machine learning-based mobile application. This hands-on experience gave me a deeper understanding of the real-world impact of FAW and reinforced the importance of developing technology-driven solutions tailored to farmers' needs.
-</p>
-</div>
-</div>
-
-<!-- Contribution 3 -->
-<div class="bg-white shadow-lg rounded-lg p-8 flex flex-col md:flex-row items-center gap-8 hover:shadow-xl transition-shadow">
-<div class="flex-1">
-<h3 class="text-2xl font-semibold text-gray-900 mb-4">Weather API Integration and Pest Advisory</h3>
-<p class="text-gray-700 text-lg leading-relaxed">
-I will also be responsible for integrating a weather API to provide real-time weather updates for farmers. Weather plays a crucial role in pest outbreaks and crop health, so giving farmers access to timely weather information will help them make informed decisions about pest management and farming activities. I will also work on developing an advisory system that provides farmers with essential information about different pests and diseases. This feature will educate farmers on how to identify, prevent, and manage common agricultural threats, ensuring they are well-prepared to handle challenges before they escalate. By combining weather insights with expert advice, this system will empower farmers with the knowledge needed to protect their crops and improve yields.
-</p>
-</div>
-</div>
-
-<!-- Contribution 4 -->
-<div class="bg-white shadow-lg rounded-lg p-8 flex flex-col md:flex-row items-center gap-8 hover:shadow-xl transition-shadow">
-<div class="flex-1">
-<h3 class="text-2xl font-semibold text-gray-900 mb-4">My Role in the Community Section</h3>
-<p class="text-gray-700 text-lg leading-relaxed">
-I will be actively involved in developing the community section of the mobile application, working alongside other team members to ensure it serves as an interactive and valuable space for farmers. This section will provide a platform for farmers to share their experiences, ask questions, and receive guidance on managing Fall Armyworm (FAW) infestations effectively. Our goal is to create a user-friendly and engaging community where farmers can exchange knowledge, discuss best practices, and stay updated on the latest pest management strategies. By integrating technology with community-driven solutions, we aim to empower farmers with real-time support and collective learning to combat FAW more efficiently.
-</p>
-</div>
-</div>
-
-<!-- Contribution 5 -->
-<div class="bg-white shadow-lg rounded-lg p-8 flex flex-col md:flex-row items-center gap-8 hover:shadow-xl transition-shadow">
-<div class="flex-1">
-<h3 class="text-2xl font-semibold text-gray-900 mb-4">Model Training</h3>
-<p class="text-gray-700 text-lg leading-relaxed">
-I will be actively involved in training the machine learning model used in the mobile application to detect Fall Armyworm (FAW) infestations. Leveraging my expertise in Python and machine learning, I will work on developing and fine-tuning the model to accurately identify FAW symptoms in crop images. By training the model on a diverse dataset of FAW images and healthy crops, I aim to create a robust and reliable detection system that can differentiate between infested and healthy plants. This model will serve as the core technology behind our pest diagnosis feature, providing farmers with instant feedback on pest presence and severity. Through continuous training and validation, I will ensure that the model delivers accurate results and meets the project's objectives of early detection and prevention of FAW outbreaks.
-</p>
-</div>
-</div>
-
-<!-- Contribution 6 -->
-<div class="bg-white shadow-lg rounded-lg p-8 flex flex-col md:flex-row items-center gap-8 hover:shadow-xl transition-shadow">
-    <div class="flex-1">
-    <h3 class="text-2xl font-semibold text-gray-900 mb-4">My Contribution to the Treatment Section</h3>
-    <p class="text-gray-700 text-lg leading-relaxed">
-I will be working on the treatment section of the mobile app, which will be displayed to farmers after diagnosing a Fall Armyworm (FAW) infestation. This section will provide users with tailored, easy-to-understand recommendations on how to effectively treat and manage the pest, based on the diagnosis results. Working alongside the team, I'll ensure that the treatment options provided are not only scientifically accurate but also practical and accessible for farmers. This feature aims to empower farmers by offering actionable solutions that can help them mitigate the damage caused by FAW and ultimately improve their crop yields. Our objective is to make sure that farmers receive reliable and timely advice to help them take the right steps in protecting their crops.
-    </p>
-    </div>
-    </div>
-
-    <!-- Contribution 7 -->
-<div class="bg-white shadow-lg rounded-lg p-8 flex flex-col md:flex-row items-center gap-8 hover:shadow-xl transition-shadow">
-    <div class="flex-1">
-    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Introduction,system overview and component design of the software design document.</h3>
-    <p class="text-gray-700 text-lg leading-relaxed">
-I will be responsible for writing the introduction, system overview, and component design sections of the software design document. In the introduction, I will provide an overview of the project, its objectives, and the target audience. I will highlight the importance of developing a mobile application for Fall Armyworm (FAW) diagnosis and emphasize the need for accurate and accessible pest detection tools for farmers. The system overview section will outline the key features and functionalities of the application, including pest diagnosis, weather updates, and community engagement. I will describe how these components will work together to provide a comprehensive solution for FAW management. In the component design section, I will detail the architecture and design of each module, explaining how they will interact and contribute to the overall system. By documenting these aspects, I will ensure that the software design document accurately captures the project's scope, requirements, and technical specifications.
-    </p>
-    </div>
-    </div>
-</div>
-</div>
-</div>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
@@ -181,29 +219,41 @@ I will be responsible for writing the introduction, system overview, and compone
         </div>
     </footer>
 
+    <!-- JavaScript -->
     <script>
         // Automatically update the year in the footer
         document.getElementById("current-year").textContent = new Date().getFullYear();
-
-        // Toggle mobile menu
-        document.getElementById("menu-toggle").addEventListener("click", function () {
-            document.getElementById("mobile-menu").classList.toggle("hidden");
+        
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80, // Offset for fixed header
+                        behavior: 'smooth'
+                    });
+                }
+            });
         });
     </script>
-
-    <!-- making the current page active -->
-<script>
-    const currentPage = window.location.pathname.split("/").pop();
-
-    const navLinks = document.querySelectorAll(".nav-link");
-
-    navLinks.forEach(link => {
-        if (link.getAttribute("href") === currentPage) {
-            link.classList.add("text-orange-600", "font-bold");
-            link.classList.remove("text-green-600");
-        }
-    });
-</script>
-
 </body>
 </html>
+

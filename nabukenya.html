@@ -1,201 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Contributions - Fall Armyworm Diagnosis</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-body {
-font-family: 'Inter', sans-serif;
-}
-.hero-section {
-background-image: url('images/farm.jpg'); /* Add your background image here */
-background-size: cover;
-background-position: center;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabukenya Mariam - Fall Armyworm Diagnosis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
+    <!-- Navigation -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <nav class="container mx-auto flex items-center justify-between py-4 px-6">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-3">
+                <img class="h-10 w-auto" src="images/Muk logo.png" alt="Logo">
+                <span class="text-xl font-bold text-purple-600">FAW Diagnosis</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-purple-600 transition duration-300">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-purple-600 transition duration-300">About</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-gray-700">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"/>
+                </svg>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden bg-white shadow-lg rounded-md p-4 md:hidden absolute w-full">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-purple-600">Home</a>
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-purple-600">About</a>
+        </div>
+    </header>
 
-<!-- Navigation -->
-<header class="bg-white shadow-md fixed w-full z-50">
-<nav class="container mx-auto flex items-center justify-between py-4 px-6">
-<!-- Logo -->
-<a href="#" class="flex items-center space-x-3">
-<img class="h-16 w-auto rounded-full" src="images/Muk logo.png" alt="Logo">
-<span class="text-2xl font-bold text-gray-900">FAW Diagnosis</span>
-</a>
+    <!-- Hero Section -->
+    <section class="relative pt-24 md:pt-32 flex items-center justify-center text-center px-6 sm:px-12 min-h-[60vh]"
+        style="background-image: url('images/3.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        
+        <!-- Content -->
+        <div class="relative z-10 max-w-3xl text-white py-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+                Nabukenya Mariam
+            </h1>
+            <p class="mt-6 text-lg md:text-xl max-w-2xl mx-auto">
+                I have been actively involved in the development of the Fall Armyworm Diagnosis project, contributing to various aspects of the project from ideation to implementation.
+            </p>
+            <div class="mt-8">
+                <a href="#about" class="rounded-md bg-purple-600 px-6 py-3 text-lg font-semibold text-white shadow-md hover:bg-purple-700 transition duration-300">
+                    About Me
+                </a>
+            </div>
+        </div>
+    </section>
 
-<!-- Desktop Navigation -->
-<div class="hidden lg:flex space-x-6">
-<a href="index.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Home</a>
-<a href="ssebatta.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Ssebatta Adam</a>
-<a href="gafabusa.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Gafabusa Willy</a>
-<a href="butteraba.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Butteraba Lynatte</a>
-<a href="nabukenya.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Nabukenya Mariam</a>
-</div>
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block px-3 py-1 text-sm font-semibold text-purple-600 bg-purple-100 rounded-full mb-4">Team Member</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+            
+            <div class="bg-white shadow-md rounded-lg p-8 max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <!-- Photo -->
+                    <div class="w-48 h-48 overflow-hidden rounded-xl shadow-lg">
+                        <img src="images/mariam.jpeg" alt="Nabukenya Mariam" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <!-- About Me Text -->
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Nabukenya Mariam</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            My name is <span class="font-semibold">Nabukenya Mariam</span>, I am passionate about Flutter, Python, and JavaScript, and I love using these technologies to create efficient, user-friendly applications. Flutter allows me to build beautiful, cross-platform mobile apps with a seamless experience, while Python is my go-to language for data processing, automation, and building powerful backend systems. With JavaScript, I enjoy creating interactive and dynamic web applications that deliver smooth and engaging experiences for users. I'm always exploring new ways to improve my coding skills and stay up-to-date with the latest trends in the development world. I'm driven by the idea of creating solutions that not only meet users' needs but also make their lives easier and more enjoyable through thoughtful design and innovative functionality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Mobile Menu Button -->
-<button id="menu-toggle" class="lg:hidden text-gray-700">
-<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"/>
-</svg>
-</button>
-</nav>
-
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden bg-white shadow-lg rounded-md p-4 lg:hidden absolute w-full top-16">
-<a href="index.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Home</a>
-<a href="ssebatta.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Ssebatta</a>
-<a href="gafabusa.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Gafabusa</a>
-<a href="butteraba.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Butteraba</a>
-<a href="nabukenya.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Nabukenya</a>
-</div>
-</header>
-
-<!-- Hero Section -->
-<section class="hero-section relative min-h-screen flex items-center justify-center text-center px-6"
-style="background-image: url('images/3.jpeg'); background-size: cover; background-position: center;">
-<div class="absolute inset-0 bg-black bg-opacity-50"></div>
-<div class="relative z-10 max-w-3xl text-white">
-<h1 class="text-5xl font-extrabold sm:text-6xl leading-tight">
-My Contributions
-</h1>
-<p class="mt-6 text-lg sm:text-xl"> 
-I have been actively involved in the development of the Fall Armyworm Diagnosis project, contributing to various aspects of the project from ideation to implementation. Here are some of my key contributions to the project:
-</p>
-<div class="mt-8">
-<a href="#about" class="rounded-md bg-orange-500 px-6 py-3 text-lg font-semibold text-white shadow-md hover:bg-orange-400 transition">
-Go to About Me
-</a>
-</div>
-</div>
+   <!-- Contributions Section -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <span class="inline-block px-3 py-1 text-sm font-semibold text-green-600 bg-green-100 rounded-full mb-4 animate-pulse">Project Work</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">My Contributions</h2>
+            <div class="w-20 h-1 bg-green-600 mx-auto transition-all duration-500 hover:w-24"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+            <!-- Contribution 1 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-purple-100 flex items-center justify-center mr-4">
+                            <span class="text-purple-600 font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Project Ideation</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        I played a key role in the ideation phase of the Fall Armyworm Diagnosis project, contributing to the conceptualization and development of the application. By collaborating with my team members, I helped define the project scope, identify key features, and outline the user experience.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Contribution 2 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <span class="text-blue-600 font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Field Data Collection</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        I was actively involved in the field data collection process, working closely with farmers, researchers, and agricultural experts to gather valuable insights on FAW infestations. This firsthand experience provided me with valuable data to inform the development of our application.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Contribution 3 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-green-100 flex items-center justify-center mr-4">
+                            <span class="text-green-600 font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Community Section Development</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        One of my key contributions is the development of the Community Section in our application. This section will serve as a platform for farmers, researchers, and agricultural experts to connect, share knowledge, and collaborate on pest management strategies.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Contribution 4 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-yellow-100 flex items-center justify-center mr-4">
+                            <span class="text-yellow-600 font-bold">4</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Image Upload and Scanning</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        I will work on the image upload and scanning feature that will allow users to upload images of their crops and scan them for signs of Fall Armyworm infestations using machine learning algorithms.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Contribution 5 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 md:col-span-2">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-red-100 flex items-center justify-center mr-4">
+                            <span class="text-red-600 font-bold">5</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Map API Integration</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        I will integrate a Map API to show the distribution of Fall Armyworm infestations in Uganda. This feature will help farmers, researchers, and policymakers to identify high-risk areas and track the movement of pests across different regions of the country.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Contribution 6 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 md:col-span-2">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                            <span class="text-indigo-600 font-bold">6</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Data Design Documentation</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        I will work on the data design of the software design document, defining the data structures, storage mechanisms, and processing workflows to create a robust and scalable architecture for our application.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- About Me Section -->
-<div id="about" class="bg-gradient-to-r from-orange-50 to-gray-50 py-16">
-<div class="container mx-auto px-6">
-<div class="bg-white shadow-lg rounded-lg p-8 max-w-4xl mx-auto">
-<div class="flex flex-col md:flex-row items-center gap-8">
-<!-- Photo -->
-<div class="w-48 h-48 overflow-hidden shadow-lg">
-<img src="images/mariam.jpeg" alt="Nabukenya Mariam" class="w-full h-full object-cover">
-</div>
 
-<!-- About Me Text -->
-<div class="flex-1">
-<h2 class="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
-<p class="text-gray-700 text-lg leading-relaxed">
-My name is <span class="font-semibold">Nabukenya Mariam</span>, I am passionate about Flutter, Python, and JavaScript, and I love using these technologies to create efficient, user-friendly applications. Flutter allows me to build beautiful, cross-platform mobile apps with a seamless experience, while Python is my go-to language for data processing, automation, and building powerful backend systems. With JavaScript, I enjoy creating interactive and dynamic web applications that deliver smooth and engaging experiences for users. I'm always exploring new ways to improve my coding skills and stay up-to-date with the latest trends in the development world.
-I’m driven by the idea of creating solutions that not only meet users' needs but also make their lives easier and more enjoyable through thoughtful design and innovative functionality.
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm">&copy; <span id="current-year"></span> Fall Armyworm Diagnosis. All rights reserved.</p>
+        </div>
+    </footer>
 
-<!-- Contributions Section -->
-<div class="bg-gradient-to-r from-orange-50 to-gray-50 py-16">
-<div class="container mx-auto px-6">
-<h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">My Contributions</h2>
-<div class="space-y-8 max-w-4xl mx-auto">
-<!-- Contribution 1 -->
-<div class="bg-white shadow-lg rounded-lg p-8 flex flex-col md:flex-row items-center gap-8 hover:shadow-xl transition-shadow">
-<div class="flex-1">
-<h3 class="text-2xl font-semibold text-gray-900 mb-4">Project ideation.</h3>
-<p class="text-gray-700 text-lg leading-relaxed">
-I played a key role in the ideation phase of the Fall Armyworm Diagnosis project, contributing to the conceptualization and development of the application. By collaborating with my team members, I helped define the project scope, identify key features, and outline the user experience. Drawing on my experience in app development and data analysis, I provided valuable insights and suggestions to shape the project's direction and ensure its alignment with the needs of farmers and agricultural stakeholders. Through brainstorming sessions and design workshops, we collectively refined our ideas and established a clear roadmap for the project's implementation. My contributions to the project ideation process were instrumental in laying the foundation for a successful and impactful solution to address the challenges of Fall Armyworm infestations in Uganda.
-</p>
-</div>
-</div>
-
-<!-- Contribution 2 -->
-<div class="bg-white shadow-lg rounded-lg p-8 flex flex-col md:flex-row items-center gap-8 hover:shadow-xl transition-shadow">
-<div class="flex-1">
-<h3 class="text-2xl font-semibold text-gray-900 mb-4">Field data collection process.</h3>
-<p class="text-gray-700 text-lg leading-relaxed">
-I was actively involved in the field data collection process for the Fall Armyworm Diagnosis project, working closely with farmers, researchers, and agricultural experts to gather valuable insights and information on FAW infestations. By conducting surveys, interviews, and on-site observations, I gained a deep understanding of the challenges faced by farmers in managing FAW outbreaks and the impact of these infestations on crop yields and livelihoods. This firsthand experience provided me with valuable data and feedback to inform the development of our application and tailor its features to meet the specific needs of our target users. By engaging directly with the farming community, I was able to build trust, establish rapport, and gain valuable insights that have shaped our project's direction and focus. My contributions to the field data collection process have been instrumental in ensuring that our application is user-centered, relevant, and impactful in addressing the real-world challenges of Fall Armyworm management.
-</p>
-</div>
-</div>
-
-<!-- Contribution 3 -->
-<div class="bg-white shadow-lg rounded-lg p-8 flex flex-col md:flex-row items-center gap-8 hover:shadow-xl transition-shadow">
-<div class="flex-1">
-<h3 class="text-2xl font-semibold text-gray-900 mb-4">Community section development.</h3>
-<p class="text-gray-700 text-lg leading-relaxed">
-One of my key contributions to the Fall Armyworm Diagnosis project is the development of the Community Section in our application. This section will serve as a platform for farmers, researchers, and agricultural experts to connect, share knowledge, and collaborate on pest management strategies. By integrating features such as discussion forums, expert Q&A sessions, and resource sharing tools, I aim to create a vibrant and engaging community that fosters collaboration, learning, and innovation in the fight against Fall Armyworm infestations. Through user-friendly interfaces and intuitive design, I will ensure that the Community Section provides a seamless and interactive experience for users to engage with each other, access valuable information, and contribute to the collective effort of combating FAW outbreaks. This section will be a valuable resource for users to learn from each other, exchange best practices, and stay informed about the latest developments in pest management and agriculture.
-</p>
-</div>
-</div>
-
-<!-- Contribution 4 -->
-<div class="bg-white shadow-lg rounded-lg p-8 flex flex-col md:flex-row items-center gap-8 hover:shadow-xl transition-shadow">
-<div class="flex-1">
-<h3 class="text-2xl font-semibold text-gray-900 mb-4">Image upload and scanning.</h3>
-<p class="text-gray-700 text-lg leading-relaxed">
- I will also work on the image upload and scanning feature of the Fall Armyworm Diagnosis application. This feature will allow users to upload images of their crops and scan them for signs of Fall Armyworm infestations using machine learning algorithms. By leveraging image recognition technology and data analysis techniques, I aim to develop a robust and accurate scanning tool that can detect FAW infestations early and provide users with timely information to take preventive measures. This feature will empower farmers to monitor their crops, identify pest threats, and take proactive steps to protect their yields and livelihoods. By integrating cutting-edge technology with user-friendly interfaces, I will ensure that the image upload and scanning feature enhances the usability and effectiveness of our application, making it a valuable tool for farmers and agricultural stakeholders.
-</p>
-</div>
-</div>
-
-<!-- Contribution 5 -->
-<div class="bg-white shadow-lg rounded-lg p-8 flex flex-col md:flex-row items-center gap-8 hover:shadow-xl transition-shadow">
-<div class="flex-1">
-<h3 class="text-2xl font-semibold text-gray-900 mb-4">Map Api to show distribution.</h3>
-<p class="text-gray-700 text-lg leading-relaxed">
-I will also work on integrating a Map API to show the distribution of Fall Armyworm infestations in Uganda. By visualizing the geographic spread of FAW outbreaks, I aim to provide users with valuable insights into the prevalence and severity of infestations in different regions of the country. This feature will help farmers, researchers, and policymakers to identify high-risk areas, track the movement of pests, and develop targeted interventions to mitigate the impact of FAW infestations on crops and agricultural productivity. By leveraging mapping technologies and data visualization tools, I will create an interactive and informative map that enhances the user experience and provides users with valuable information to make informed decisions about pest management and crop protection. This feature will be a valuable resource for users to understand the spatial distribution of FAW infestations and take proactive measures to safeguard their crops and livelihoods.
-</p>
-</div>
-</div>
-
-<!-- Contribution 6 -->
-<div class="bg-white shadow-lg rounded-lg p-8 flex flex-col md:flex-row items-center gap-8 hover:shadow-xl transition-shadow">
-    <div class="flex-1">
-    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Data design of the software design document.</h3>
-    <p class="text-gray-700 text-lg leading-relaxed">
-    I will also work on the data design of the software design document for the Fall Armyworm Diagnosis application. By defining the data structures, storage mechanisms, and processing workflows of the application, I aim to create a robust and scalable architecture that can handle large volumes of data and support complex analytical tasks. By designing efficient data models, databases, and APIs, I will ensure that our application can capture, store, and retrieve information effectively to support the diverse needs of users and stakeholders. Through careful planning and documentation of the data design, I will establish a solid foundation for the development of our application and ensure that it can meet the performance, security, and scalability requirements of a modern software solution. This contribution will be critical in shaping the technical architecture of our application and enabling us to build a reliable and efficient platform for pest management and agricultural data analysis.
-    </p>
-    </div>
-    </div>
-
-</div>
-</div>
-</div>
-
-<!-- Footer -->
-<footer class="bg-gray-800 text-white py-8">
-<div class="container mx-auto px-6 text-center">
-<p class="text-sm">&copy; <span id="current-year"></span> Fall Armyworm Diagnosis. All rights reserved.</p>
-</div>
-</footer>
-
-<script>
-// Automatically update the year in the footer
-document.getElementById("current-year").textContent = new Date().getFullYear();
-
-// Toggle mobile menu
-document.getElementById("menu-toggle").addEventListener("click", function () {
-document.getElementById("mobile-menu").classList.toggle("hidden");
-});
-</script>
-
-<!-- making the current page active -->
-<script>
-const currentPage = window.location.pathname.split("/").pop();
-
-const navLinks = document.querySelectorAll(".nav-link");
-
-navLinks.forEach(link => {
-if (link.getAttribute("href") === currentPage) {
-link.classList.add("text-orange-600", "font-bold");
-link.classList.remove("text-green-600");
-}
-});
-</script>
-
+    <!-- JavaScript -->
+    <script>
+        // Automatically update the year in the footer
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80, // Offset for fixed header
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+
