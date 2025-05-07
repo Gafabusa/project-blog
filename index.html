@@ -13,25 +13,23 @@
     </style>
 </head>
 <body class="bg-gray-50">
-
     <!-- Navigation -->
     <header class="bg-white shadow-md fixed w-full z-50">
         <nav class="container mx-auto flex items-center justify-between py-4 px-6">
             <!-- Logo -->
             <a href="#" class="flex items-center space-x-3">
-                <img class="h-16 w-auto rounded-full" src="images/Muk logo.png" alt="Logo">
-                <span class="text-2xl font-bold text-gray-900">FAW Diagnosis</span>
+                <img class="h-12 w-auto rounded-full" src="images/Muk logo.png" alt="Logo">
+                <span class="text-xl font-bold text-purple-600">FAW Diagnosis</span>
             </a>
-
+            
             <!-- Desktop Navigation -->
-<div class="hidden lg:flex space-x-6">
-    <a href="index.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Home</a>
-    <a href="ssebatta.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Ssebatta Adam</a>
-    <a href="gafabusa.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Gafabusa Willy</a>
-    <a href="butteraba.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Butteraba Lynatte</a>
-    <a href="nabukenya.html" class="nav-link text-green-600 font-semibold hover:text-orange-500 transition">Nabukenya Mariam</a>
-</div>
-
+            <div class="hidden lg:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-purple-600 font-semibold transition">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-purple-600 font-semibold transition">About</a>
+                <a href="#project-updates" class="text-gray-600 hover:text-purple-600 font-semibold transition">Blog</a>
+                <a href="#contact-section" class="text-gray-600 hover:text-purple-600 font-semibold transition">Contact</a>
+            </div>
+            
             <!-- Mobile Menu Button -->
             <button id="menu-toggle" class="lg:hidden text-gray-700">
                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -39,218 +37,409 @@
                 </svg>
             </button>
         </nav>
-
+        
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden bg-white shadow-lg rounded-md p-4 lg:hidden absolute w-full top-16">
-            <a href="index.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Home</a>
-            <a href="ssebatta.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Ssebatta</a>
-            <a href="gafabusa.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Gafabusa</a>
-            <a href="butteraba.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Butteraba</a>
-            <a href="nabukenya.html" class="block py-2 text-center text-green-600 font-semibold hover:text-orange-500">Nabukenya</a>
+        <div id="mobile-menu" class="hidden bg-white shadow-lg rounded-md p-4 lg:hidden absolute w-full">
+            <a href="index.html" class="block py-2 text-center text-gray-600 hover:text-purple-600">Home</a>
+            <a href="about.html" class="block py-2 text-center text-gray-600 hover:text-purple-600">About</a>
+            <a href="#project-updates" class="block py-2 text-center text-gray-600 hover:text-purple-600">Blog</a>
+            <a href="#contact-section" class="block py-2 text-center text-gray-600 hover:text-purple-600">Contact</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center text-center px-6 sm:px-12"
-    style="background-image: url('images/faw.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-    
-    <!-- Dark Overlay -->
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-
-    <!-- Content -->
-    <div class="relative z-10 max-w-3xl text-white">
-        <h1 class="text-5xl font-extrabold sm:text-6xl leading-tight">
-            Fall Armyworm Diagnosis
-        </h1>
-        <p class="mt-6 text-lg sm:text-xl">
-            A machine learning-based system for early detection and diagnosis of Fall Armyworm (FAW) infestations in maize crops.
-        </p>
+    <section class="relative pt-24 md:pt-0 min-h-screen flex items-center justify-center text-center px-6 sm:px-12"
+        style="background-image: url('images/faw.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         
-    </div>
-</section>
-
-
- <!-- Introduction Section -->
-<div class="container mx-auto px-6 py-16">
-    <div class="bg-white shadow-lg rounded-lg p-8 max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">Introduction</h2>
-        
-        <!-- Flex container to make image & text equal height -->
-        <div class="flex flex-col md:flex-row gap-8 items-stretch">
-            
-            <!-- Image Container (Now Includes Caption) -->
-            <div class="w-full md:w-1/2 flex flex-col">
-                <img src="images/faw.jpeg" alt="Fall Armyworm on maize" 
-                    class="rounded-lg shadow-md w-full h-auto object-cover aspect-[4/3]">
-                <p class="text-center text-gray-600 mt-2 text-sm italic">Fig 1: Maize leaf with Fall Armyworm</p>   
-            </div>
-
-            <!-- Text Container (Will Stretch to Match Image) -->
-            <div class="w-full md:w-1/2 flex flex-col justify-center">
-                <p class="text-gray-700 text-lg leading-relaxed">
-                    The Fall Armyworm (FAW) (<i>Spodoptera frugiperda</i>) is a highly destructive pest that primarily attacks maize and cereal crops worldwide. 
-                    Originally from the Americas, FAW has rapidly spread to Africa, including Uganda, due to favorable climatic conditions and global trade. 
-                    It causes severe crop losses, reduced yields, and financial instability, especially for small-scale farmers with limited pest control resources.  
-                    Early detection is crucial, but most farmers rely on ineffective visual inspections, leading to delayed responses.  
-                    Current methods like chemical pesticides are costly and pose environmental and health risks when misused. 
-                    This study aims to collect data on FAW prevalence, its impact, and existing management strategies among smallholder farmers.  
-                    Ultimately, the research supports food security and sustainable agriculture in Uganda.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-  <!-- problem statement -->
-<div class="container mx-auto px-6 py-16">
-    <div class="bg-white shadow-lg rounded-lg p-8 max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">Problem statement</h2>
-        
-<div class="flex flex-col md:flex-row gap-8 items-stretch">
-<div class="w-full md:w-1/2 flex flex-col">
-<img src="images/1.jpeg" alt="Fall Armyworm on maize" 
- class="rounded-lg shadow-md w-full h-auto object-cover aspect-[4/3]">
-<p class="text-center text-gray-600 mt-2 text-sm italic">Fig 1: Early stages of Fall Armyworm on a maize leaf.</p>   
-</div>
-            <!-- Text Container (Will Stretch to Match Image) -->
-<div class="w-full md:w-1/2 flex flex-col justify-center">
-<p class="text-gray-700 text-lg leading-relaxed">
-Fall Armyworm (Spodoptera frugiperda) is a severe pest affecting maize farmers in Uganda. Farmers struggle to identify infestations early due to a lack of affordable tools and resources. Instead, they rely on traditional practices and personal observations, which are often inaccurate and delay intervention. These delays allow the pest to cause extensive damage, reducing yields and increasing the economic burden on smallholder farmers. Access to reliable pest management strategies, including diagnostic tools and expert guidance, is limited in rural areas, further worsening the problem. While technological solutions such as mobile apps could bridge this gap, farmers' perceptions of and readiness for adopting these tools remain unclear. This study aims to address these challenges by collecting data to understand farmers' experiences, practices, and openness to technology-driven solutions.
-</p>
-</div>
-</div>
-</div>
-</div>
-
-<!-- Project Objective -->
-<div class="container mx-auto px-6 py-16">
-    <div class="bg-white shadow-lg rounded-lg p-8 max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">Project Objective</h2>
-        <div class="flex flex-col md:flex-row items-start gap-8">
-            <!-- Image on the Left -->
-            <div class="w-full md:w-1/2 flex-grow">
-                <div class="relative w-full aspect-[4/3]">
-                    <img src="images/3.jpeg" alt="Technology in Agriculture" 
-                        class="rounded-lg shadow-md w-full h-full object-cover">
+        <!-- Content -->
+        <div class="relative z-10 max-w-4xl text-white py-12">
+            <h1 class="text-3xl md:text-5xl font-extrabold sm:text-6xl leading-tight mb-6">Fall Armyworm Diagnosis</h1>
+            <p class="text-base md:text-lg sm:text-xl mb-12">A machine learning-based system for early detection and diagnosis of Fall Armyworm (FAW) infestations in maize crops.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white bg-opacity-10 backdrop-blur-md p-6 rounded-lg">
+                    <div class="flex justify-center mb-4">
+                        <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Early Detection</h3>
+                    <p class="text-gray-200">Identify FAW infestations early to minimize crop damage.</p>
                 </div>
-                <p class="text-center text-gray-600 mt-3 text-sm italic">
-                    Fig 3:Maize leaf with severe fall armyworm effect.
-                </p>
-            </div>
-
-            <!-- Text on the Right -->
-            <div class="w-full md:w-1/2 flex items-center">
-                <p class="text-gray-700 text-lg leading-relaxed">
-                    The objective of this study is to assess the awareness and challenges faced by maize farmers in identifying and managing Fall Armyworm (FAW) infestations.  
-                    Additionally, the study explores farmers' perceptions of using technology as a solution, including their experiences, knowledge of FAW's impact, 
-                    and readiness to adopt digital tools for early detection and management.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Meet the Team Section -->
-<section class="container mx-auto px-6 py-16">
-    <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Meet the Team</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        <!-- Team Member 1 -->
-        <div>
-            <div class="h-96 w-full overflow-hidden rounded-lg shadow-lg">
-                <img src="images/adam.jpeg" alt="Ssebatta Adam" class="w-full h-full object-cover">
-            </div>
-            <div class="mt-4 text-center">
-                <h3 class="text-2xl font-semibold text-gray-900">Ssebatta Adam</h3>
-            </div>
-        </div>
-
-        <!-- Team Member 2 -->
-        <div>
-            <div class="h-96 w-full overflow-hidden rounded-lg shadow-lg">
-                <img src="images/willy.jpeg" alt="Gafabusa Willy" class="w-full h-full object-cover">
-            </div>
-            <div class="mt-4 text-center">
-                <h3 class="text-2xl font-semibold text-gray-900">Gafabusa Willy</h3>
-            </div>
-        </div>
-
-        <!-- Team Member 3 -->
-        <div>
-            <div class="h-96 w-full overflow-hidden rounded-lg shadow-lg">
-                <img src="images/lynatte.jpeg" alt="Butteraba Lynatte" class="w-full h-full object-cover">
-            </div>
-            <div class="mt-4 text-center">
-                <h3 class="text-2xl font-semibold text-gray-900">Butteraba Lynatte</h3>
-            </div>
-        </div>
-
-        <!-- Team Member 4 -->
-        <div>
-            <div class="h-96 w-full overflow-hidden rounded-lg shadow-lg">
-                <img src="images/mariam.jpeg" alt="Nabukenya Mariam" class="w-full h-full object-cover">
-            </div>
-            <div class="mt-4 text-center">
-                <h3 class="text-2xl font-semibold text-gray-900">Nabukenya Mariam</h3>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- PDF Documents Section -->
-    <section class="container mx-auto px-6 py-16">
-        <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Project Documents</h2>
-        <div class="grid md:grid-cols-3 gap-12">
-            <!-- PDF 1 -->
-            <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
-                <h3 class="text-xl font-semibold text-gray-900 mb-2">Data Collection questionnaire</h3>
-                <embed src="documents/questions.pdf" type="application/pdf" class="w-full h-56 rounded-md">
-                <a href="documents/questions.pdf" target="_blank" class="block mt-3 text-orange-500 font-semibold hover:underline">View Full PDF</a>
-            </div>
-            <!-- PDF 2 -->
-            <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
-                <h3 class="text-xl font-semibold text-gray-900 mb-2">SRS</h3>
-                <embed src="documents/SRS.pdf" type="application/pdf" class="w-full h-56 rounded-md">
-                <a href="documents/SRS.pdf" target="_blank" class="block mt-3 text-orange-500 font-semibold hover:underline">View Full PDF</a>
-            </div>
-            <!-- PDF 3 -->
-            <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
-                <h3 class="text-xl font-semibold text-gray-900 mb-2">Final Report</h3>
-                <embed src="documents/report.pdf" type="application/pdf" class="w-full h-56 rounded-md">
-                <a href="documents/report.pdf" target="_blank" class="block mt-3 text-orange-500 font-semibold hover:underline">View Full PDF</a>
+                <div class="bg-white bg-opacity-10 backdrop-blur-md p-6 rounded-lg">
+                    <div class="flex justify-center mb-4">
+                        <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Machine Learning</h3>
+                    <p class="text-gray-200">Leverage AI for accurate pest diagnosis.</p>
+                </div>
+                <div class="bg-white bg-opacity-10 backdrop-blur-md p-6 rounded-lg">
+                    <div class="flex justify-center mb-4">
+                        <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7v-2a3 3 0 005.356-1.857M17 20v2m-10 0v-2m-3-3h12a3 3 0 003-3v-5a3 3 0 00-3-3H6a3 3 0 00-3 3v5a3 3 0 003 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Farmer Support</h3>
+                    <p class="text-gray-200">Empower farmers with sustainable solutions.</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Project Updates Section -->
+    <section id="project-updates" class="container mx-auto px-6 py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Project Updates</h2>
+        <p class="text-gray-600 text-center mb-12">Follow our journey as we develop innovative solutions for FAW detection and management.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Introduction to FAW Diagnosis</h3>
+                <div class="flex items-center text-gray-500 mb-4">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    <span>August 25, 2024</span>
+                </div>
+                <p class="text-gray-700">An overview of our innovative approach to FAW detection using machine learning. Learn about our project goals and expected impact on farmers.</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Problem Statement Analysis</h3>
+                <div class="flex items-center text-gray-500 mb-4">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    <span>September 20, 2024</span>
+                </div>
+                <p class="text-gray-700">Key findings from our problem statement, including insights from farmers, challenges in early detection, and the need for technological solutions.</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Project Objective Defined</h3>
+                <div class="flex items-center text-gray-500 mb-4">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    <span>October 25, 2024</span>
+                </div>
+                <p class="text-gray-700">Exploring the objectives of our project, including assessing farmers' awareness, challenges, and readiness to adopt technology for FAW management.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Timeline Section -->
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Project Timeline</h2>
+        <p class="text-gray-600 text-center mb-12">Track our progress as we develop and implement the FAW diagnosis system from initial concept to final deployment.</p>
+        <div class="space-y-8">
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 md:mb-0">Project Initiation & Supervisor Meeting</h3>
+                    <div class="flex items-center">
+                        <span class="text-gray-500 mr-4 text-sm md:text-base">Completed • July 15, 2024</span>
+                        <div class="w-16 md:w-24 bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-gray-900 h-2.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-4">Kickoff meeting with the project supervisor to define scope and objectives.</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Project scope definition</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Supervisor alignment</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 md:mb-0">Field Data Collection</h3>
+                    <div class="flex items-center">
+                        <span class="text-gray-500 mr-4 text-sm md:text-base">Completed • September 10, 2024</span>
+                        <div class="w-16 md:w-24 bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-gray-900 h-2.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-4">Gathering real-world data from farmers to analyze FAW impact.</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Field surveys conducted</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Data compilation</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 md:mb-0">Design Document Submission</h3>
+                    <div class="flex items-center">
+                        <span class="text-gray-500 mr-4 text-sm md:text-base">Completed • November 20, 2024</span>
+                        <div class="w-16 md:w-24 bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-gray-900 h-2.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-4">Submission of the initial design document for review.</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Design draft preparation</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Review submission</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 md:mb-0">Project Implementation</h3>
+                    <div class="flex items-center">
+                        <span class="text-gray-500 mr-4 text-sm md:text-base">Completed • March 15, 2025</span>
+                        <div class="w-16 md:w-24 bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-gray-900 h-2.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-4">Execution of the FAW diagnosis system development.</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>System coding</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Testing phases</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 md:mb-0">Project Report Submission</h3>
+                    <div class="flex items-center">
+                        <span class="text-gray-500 mr-4 text-sm md:text-base">Completed • May 9, 2025</span>
+                        <div class="w-16 md:w-24 bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-gray-900 h-2.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-4">Final documentation of the entire project.</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Implementation documentation</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Final report completion</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 md:mb-0">Final Presentations</h3>
+                    <div class="flex items-center">
+                        <span class="text-gray-500 mr-4 text-sm md:text-base">In Progress • May 15, 2025</span>
+                        <div class="w-16 md:w-24 bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-gray-900 h-2.5 rounded-full" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-4">Presentation of project outcomes to stakeholders and supervisors.</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-yellow-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                        </svg>
+                        <span>Presentation preparation</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-yellow-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                        </svg>
+                        <span>Stakeholder feedback collection</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team Section -->
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Our Team</h2>
+        <p class="text-gray-600 text-center mb-12">Meet the talented individuals behind our FAW diagnosis solution.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- Team Member 1 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <div class="h-40 w-40 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img src="images/adam.jpeg" alt="Ssebatta Adam" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900">Ssebatta Adam</h3>
+                <p class="text-gray-600 mb-4">Lead Researcher</p>
+                <a href="ssebatta.html" class="block mt-4 text-purple-600 font-semibold hover:underline">View Profile</a>
+            </div>
+            
+            <!-- Team Member 2 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <div class="h-40 w-40 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img src="images/willy.jpeg" alt="Gafabusa Willy" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900">Gafabusa Willy</h3>
+                <p class="text-gray-600 mb-4">Data Scientist</p>
+                <a href="gafabusa.html" class="block mt-4 text-purple-600 font-semibold hover:underline">View Profile</a>
+            </div>
+            
+            <!-- Team Member 3 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <div class="h-40 w-40 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img src="images/lynatte.jpeg" alt="Butteraba Lynatte" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900">Butteraba Lynatte</h3>
+                <p class="text-gray-600 mb-4">Field Researcher</p>
+                <a href="butteraba.html" class="block mt-4 text-purple-600 font-semibold hover:underline">View Profile</a>
+            </div>
+            
+            <!-- Team Member 4 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <div class="h-40 w-40 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img src="images/mariam.jpeg" alt="Nabukenya Mariam" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900">Nabukenya Mariam</h3>
+                <p class="text-gray-600 mb-4">System Developer</p>
+                <a href="nabukenya.html" class="block mt-4 text-purple-600 font-semibold hover:underline">View Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Contact Us</h2>
+            <p class="text-gray-600 text-center mb-12">Have questions about our project? Get in touch with our team.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <div>
+                                <h4 class="text-lg font-medium text-gray-900">Address</h4>
+                                <p class="text-gray-600 mt-1">Makerere University, Kampala, Uganda</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <div>
+                                <h4 class="text-lg font-medium text-gray-900">Phone</h4>
+                                <p class="text-gray-600 mt-1">+256 757314564</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <div>
+                                <h4 class="text-lg font-medium text-gray-900">Email</h4>
+                                <p class="text-gray-600 mt-1">willygafabusa@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Send Us a Message</h3>
+                    <form action="https://formspree.io/f/xvgarzag" method="POST" class="mt-8">
+                        <input type="text" id="name" name="Name" placeholder="Your name" autocomplete="given-name"
+                          class="w-full mb-4 rounded-md border border-gray-400 py-2 px-4 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+                        <input type="email" id="email" name="Email" placeholder="Your email address" autocomplete="email"
+                          class="w-full mb-4 rounded-md border border-gray-400 py-2 px-4 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+                        <textarea id="message" name="Message" cols="30" rows="5" placeholder="Write your message..."
+                          class="w-full mb-4 rounded-md border border-gray-400 py-2 px-4 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"></textarea>
+                        <button type="submit"
+                          class="w-full bg-purple-600 hover:bg-purple-800 text-white font-semibold py-2 px-4 rounded-md shadow-lg hover:shadow-xl transition duration-200">
+                          Send Message
+                        </button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-6 text-center">
             <p class="text-sm">&copy; <span id="current-year"></span> Fall Armyworm Diagnosis. All rights reserved.</p>
         </div>
     </footer>
-    
+
+    <!-- JavaScript -->
     <script>
         // Automatically update the year in the footer
         document.getElementById("current-year").textContent = new Date().getFullYear();
-    </script>
-
-    <script>
-        document.getElementById("menu-toggle").addEventListener("click", function () {
-            document.getElementById("mobile-menu").classList.toggle("hidden");
+        
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80, // Offset for fixed header
+                        behavior: 'smooth'
+                    });
+                }
+            });
         });
     </script>
-
-   <!-- making the current page active -->
-<script>
-    const currentPage = window.location.pathname.split("/").pop();
-
-    const navLinks = document.querySelectorAll(".nav-link");
-
-    navLinks.forEach(link => {
-        if (link.getAttribute("href") === currentPage) {
-            link.classList.add("text-orange-600", "font-bold");
-            link.classList.remove("text-green-600");
-        }
-    });
-</script>
-
 </body>
 </html>
+
+
